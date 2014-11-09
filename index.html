@@ -20,11 +20,10 @@ body{
 	text-transform:capitalize;
 }
 #container{
-	position: relative;
 }
 #myCanvas{
 	border: 2px solid red;
-	position: absolute;
+	
 	width: 100%;
 }
 </style>
@@ -58,15 +57,17 @@ $(document).ready(function(){
   		context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
 
   		$("#toptext").on("keyup",function(){
-  			// console.log($(this).val());
+  			//save blue style of fill rectangle
   			context2.save();
   			var topTxt=$(this).val();
   			//clear the rectangle
   			context2.clearRect (0,0,context2.canvas.width,context2.canvas.height);
   			//draw the canvas again to get fresh frame
 			context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
+			//change fill style to white
 			context2.fillStyle = "#ffffff"; 
 			context2.fillText(topTxt,50,50,100,100);
+			//
 			context2.restore();
 
   		});
