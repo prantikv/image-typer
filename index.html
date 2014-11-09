@@ -61,7 +61,9 @@ $(document).ready(function(){
   			// console.log($(this).val());
   			context2.save();
   			var topTxt=$(this).val();
+  			//clear the rectangle
   			context2.clearRect (0,0,context2.canvas.width,context2.canvas.height);
+  			//draw the canvas again to get fresh frame
 			context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
 			context2.fillStyle = "#ffffff"; 
 			context2.fillText(topTxt,50,50,100,100);
