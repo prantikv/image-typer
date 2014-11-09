@@ -69,7 +69,9 @@ $(document).ready(function(){
 			context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
 			//change fill style to white
 			context2.fillStyle = "#ffffff"; 
-			context2.fillText(topTxt,50,50,100,100);
+			var maxWidth=50;
+			context2.font="bold 25px verdana";
+			context2.fillText(topTxt,50,50,100,100,maxWidth);
 			//
 			context2.restore();
 
