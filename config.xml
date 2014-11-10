@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "com.prantikv.meme"
-	versionCode="1"
+	versionCode="4"
 	version   = "1.0">
     <name>imageTYper</name>
     <description>
@@ -10,27 +10,13 @@ A simple gallery app to showcase the paintings of NirupamaArt	</description>
 <author href="prantikv.blogspot.in" email="prantikv@yahoo.com">
 Chris Griffith
 </author>
-    <gap:platform name="ios" />
     <gap:platform name="android" />
-    <gap:platform name="winphone" />
-	
+   	
     <preference name="phonegap-version" value="3.6.3" />
 	
     <preference name="orientation" value="portrait" />
 
-    <preference name="fullscreen" value="false" />
-	
-    <preference name="webviewbounce" value="false" />
-    <preference name="DisallowOverscroll" value="true"/>
-    <preference name="disallowOverscroll" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="prerendered-icon" value="false" />
-	
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-installLocation" value="auto" />
-	
-    <preference name="BackgroundColor" value="0xffffffff "/>
-	
-  
+   	
+     
     
 </widget>
