@@ -45,7 +45,11 @@ $(document).ready(function(){
 		context2.canvas.width=$("#myCanvas").width();
 	  	context2.canvas.height=$("#myCanvas").height();
 
-  		context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
+	  	var canWidth=$("#myCanvas").width();
+		var canHeight=$("#myCanvas").height();
+
+
+  		context2.fillRect(0,0,canWidth,canHeight);
 
   		$("#toptext").on("keyup",function(){
   			//save blue style of fill rectangle
@@ -69,7 +73,10 @@ $(document).ready(function(){
 
 			context2.fillStyle = "#ffffff"; 
 			context2.strokeStyle = "#ffffff"; 
-			context2.rect(0,0,context2.canvas.width-30,context2.canvas.height-30);
+			context2.rect(0,0,canWidth-100,canHeight-100);
+			
+			context2.rect(canWidth-100,canHeight-100,50,50);
+
 
 			context2.stroke();
 			var maxWidth=50;
