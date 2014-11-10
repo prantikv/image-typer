@@ -28,7 +28,7 @@ body{
 </head>
 
 <body>
-
+		<div id="container">
 		<canvas id="myCanvas"></canvas>
 		</div>
 		<input id="toptext" type="text">
@@ -47,11 +47,15 @@ $(document).ready(function(){
   			//save blue style of fill rectangle
   			context2.save();
   			var topTxt=$(this).val();
+  			context2.canvas.width=$("#myCanvas").width();
+	  		context2.canvas.height=$("#myCanvas").height();
   			//clear the rectangle
   			context2.clearRect (0,0,context2.canvas.width,context2.canvas.height);
   			//draw the canvas again to get fresh frame
 			context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
 			//change fill style to white
+			 console.log($("#myCanvas").width());
+			 console.log($("#container").width());
 			context2.fillStyle = "#ffffff"; 
 			var maxWidth=50;
 			context2.font="bold 25px verdana";
