@@ -41,28 +41,44 @@ $(document).ready(function(){
 	 var context2= $("#myCanvas")[0].getContext('2d');
 	 $("#myCanvas,#container").height((3*window.innerWidth)/4);
 		context2.fillStyle = "#0000ff"; 
+		
+		context2.canvas.width=$("#myCanvas").width();
+	  	context2.canvas.height=$("#myCanvas").height();
+
   		context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
 
   		$("#toptext").on("keyup",function(){
   			//save blue style of fill rectangle
   			context2.save();
-  			var topTxt=$(this).val();
-  			context2.canvas.width=$("#myCanvas").width();
-	  		context2.canvas.height=$("#myCanvas").height();
+  			 var topTxt=$(this).val();
+  			
   			//clear the rectangle
   			context2.clearRect (0,0,context2.canvas.width,context2.canvas.height);
   			//draw the canvas again to get fresh frame
 			context2.fillRect(0,0,context2.canvas.width,context2.canvas.height);
 			//change fill style to white
-			 console.log($("#myCanvas").width());
-			 console.log($("#container").width());
+
+			console.log("context width"+context2.canvas.width);
+			console.log("context height"+context2.canvas.height);
+
+			console.log($("#myCanvas").width());
+			console.log($("#container").width());
+
+
+
+
 			context2.fillStyle = "#ffffff"; 
+			context2.strokeStyle = "#ffffff"; 
+			context2.rect(0,0,context2.canvas.width-30,context2.canvas.height-30);
+
+			context2.stroke();
 			var maxWidth=50;
 			context2.font="bold 25px verdana";
 			context2.fillText(topTxt,50,50,maxWidth);
 			context2.fillText("this is a demo of a very long text that is not supposed to fit",20,80,30);
 			//
 			context2.restore();
+
 
   		});
 
