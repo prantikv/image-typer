@@ -85,6 +85,7 @@ $(document).ready(function(){
 			context2.strokeText(topTxt,50,150,maxWidth); 
 			context2.fillText("this is a demo of a very long text that is not supposed to fit",20,80,30);
 			//
+			context2.fillText("width:" + context2.measureText(topTxt).width, 20, 150);
 			context2.restore();
 
 

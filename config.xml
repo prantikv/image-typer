@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "com.prantikv.meme"
-	versionCode="4"
+	versionCode="4.2"
 	version   = "1.0">
     <name>imageTYper</name>
     <description>
@@ -17,6 +17,6 @@ Chris Griffith
     <preference name="orientation" value="portrait" />
 
    	
-     
+ <!--   <gap:plugin name="com.adobe.plugins.fastcanvas" version="1.0.1" /> -->  
     
 </widget>
