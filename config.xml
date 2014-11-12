@@ -15,7 +15,8 @@ Chris Griffith
     <preference name="phonegap-version" value="3.6.3" />
 	
     <preference name="orientation" value="portrait" />
-
+    
+<plugin name="SavePhotoPlugin" value="org.apache.cordova.plugin.SavePhotoPlugin"/>
    	
  <!--   <gap:plugin name="com.adobe.plugins.fastcanvas" version="1.0.1" /> -->  
     
